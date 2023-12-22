@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { TaskList } from "./TaskList";
 import { AddTask } from "./AddTask";
 import { Menu } from "./Menu";
+import Footer from "./Footer/Index";
 
 // Composant AddTask
 
@@ -35,19 +36,19 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div className="parent-container">
       <h1>To-Do List</h1>
 
       <AddTask onAdd={addTask} />
       <Menu tasks={tasks} setNewTasks={setNewTasks} />
-
-      <TaskList
-        tasks={Newtasks.length > 0 ? Newtasks : tasks}
-        onDelete={deleteTask}
-        onComplete={completeTask}
-      />
-
-      <p>by monta</p>
+      <div className="content">
+        <TaskList
+          tasks={Newtasks.length > 0 ? Newtasks : tasks}
+          onDelete={deleteTask}
+          onComplete={completeTask}
+        />
+      </div>
+      <Footer />
     </div>
   );
 }

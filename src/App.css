@@ -128,3 +128,48 @@ margin-top: 4%;
   justify-self: start;
   gap: 3rem;
 }
+
+/* Footer styles */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f7fafc;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.hr-line {
+  margin-bottom: 1.5rem; /* Adjust as needed */
+  border-color: #cbd5e0; /* Change as needed */
+}
+
+/* Text styles */
+.text-info {
+  display: block;
+  font-size: 0.875rem; /* Adjust as needed */
+  color: #4a5568; /* Change as needed */
+  text-align: center;
+}
+
+/* Link styles */
+.link {
+  text-decoration: none;
+  color: #4a5568; /* Change as needed */
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.parent-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 93vh; /* Or set height as needed */
+}
+.content {
+  max-height: calc(68vh - 50px); /* Adjust height based on footer size */
+  overflow-y: auto; /* Enable vertical scroll */
+}
