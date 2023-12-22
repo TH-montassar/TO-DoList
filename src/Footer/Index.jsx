@@ -8,7 +8,7 @@ const Footer = () => {
         <span class="text-info">
           © 2023
           <a
-            href="https://www.linkedin.com/in/mohamed-aziz-farhani-643583214/"
+            href="https://www.linkedin.com/in/montassar-front-end-dev/"
             class="link hover:underline"
           >
             Powred By MontassarThemri
